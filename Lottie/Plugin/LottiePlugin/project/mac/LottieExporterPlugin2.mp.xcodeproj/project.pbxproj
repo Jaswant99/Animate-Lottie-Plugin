@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		"0d500fae-0ee8-3a08-b8ee-db7d4fd0fc7f" /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "f884e1ec-38c9-31fe-8dc2-4eb40ef66362" /* AppKit.framework */; };
+		"0daed7f8-47e8-34b1-82e9-ed2ad9bc3dd7" /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "bd5c5b5a-7505-3837-8a8b-a7c8d52f5e8e" /* ApplicationServices.framework */; };
+		"15e3c10b-48cc-30f6-9154-03dc03faf3d9" /* PublishToLottie.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "9b699d8b-e6c7-3dd3-81ac-f73267a80d17" /* PublishToLottie.cpp */; };
+		"1db80df0-2680-35f1-83e6-3346e4a53fce" /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "94c4fee1-e782-31f0-82c3-0e5ebba25d37" /* Foundation.framework */; };
+		"1e197cbf-2810-33f3-94d6-cc9fec10ad38" /* LottieMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "5727d348-ca34-37d2-ab81-82c55ad0ffd1" /* LottieMain.cpp */; };
+		"21e958d6-982c-3cd3-9800-795feedb43e3" /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "b0b6bbf6-52ca-3beb-b965-05011293fb36" /* CoreFoundation.framework */; };
+		"2be9c7bc-62d9-3ede-8614-274a81973337" /* LottieUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "284e02e8-c7f4-307d-a6a4-be1a33128836" /* LottieUtils.cpp */; };
+		"4187ba0a-8093-3dd1-ab2e-00712ffa5f8e" /* LottiePublisher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "bec068b4-e95c-38a6-bd15-9857f2d78063" /* LottiePublisher.cpp */; };
+		"4d44901b-3548-3bd4-b418-1fe9304e1fc4" /* LottieOutputWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "0653de73-f4ae-3bdb-896a-f36aed33e04e" /* LottieOutputWriter.cpp */; };
+		"5ac899dc-13eb-346a-890c-1072f7aa82fd" /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "bb95f6ac-f935-3bae-b6a7-79805bbef8dc" /* CoreServices.framework */; };
+		"628738f7-f919-3b69-b0bf-d84080424d6d" /* LottieDocType.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "5b75567a-91fe-334b-8f1c-16bc0799d6fc" /* LottieDocType.cpp */; };
+		"658cbf32-33e3-3231-be5b-68c409b7f767" /* LottiePublisher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "bec068b4-e95c-38a6-bd15-9857f2d78063" /* LottiePublisher.cpp */; };
+		"6ac9d8d6-8a91-3f7f-b80d-4dcb48f5020b" /* LottieUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "284e02e8-c7f4-307d-a6a4-be1a33128836" /* LottieUtils.cpp */; };
+		80D04EF72331229200726806 /* JSONIterators.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80D04EE92331229200726806 /* JSONIterators.cpp */; };
+		80D04EF82331229200726806 /* JSONIterators.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80D04EE92331229200726806 /* JSONIterators.cpp */; };
+		80D04EF92331229200726806 /* JSONStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80D04EEA2331229200726806 /* JSONStream.cpp */; };
+		80D04EFA2331229200726806 /* JSONStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80D04EEA2331229200726806 /* JSONStream.cpp */; };
+		80D04EFB2331229200726806 /* JSONNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80D04EEB2331229200726806 /* JSONNode.cpp */; };
+		80D04EFC2331229200726806 /* JSONNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80D04EEB2331229200726806 /* JSONNode.cpp */; };
+		80D04EFD2331229200726806 /* JSONNode_Mutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80D04EEC2331229200726806 /* JSONNode_Mutex.cpp */; };
+		80D04EFE2331229200726806 /* JSONNode_Mutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80D04EEC2331229200726806 /* JSONNode_Mutex.cpp */; };
+		80D04EFF2331229200726806 /* JSONValidator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80D04EED2331229200726806 /* JSONValidator.cpp */; };
+		80D04F002331229200726806 /* JSONValidator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80D04EED2331229200726806 /* JSONValidator.cpp */; };
+		80D04F012331229200726806 /* JSONDebug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80D04EEE2331229200726806 /* JSONDebug.cpp */; };
+		80D04F022331229200726806 /* JSONDebug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80D04EEE2331229200726806 /* JSONDebug.cpp */; };
+		80D04F032331229200726806 /* JSONMemory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80D04EEF2331229200726806 /* JSONMemory.cpp */; };
+		80D04F042331229200726806 /* JSONMemory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80D04EEF2331229200726806 /* JSONMemory.cpp */; };
+		80D04F052331229200726806 /* JSONWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80D04EF02331229200726806 /* JSONWriter.cpp */; };
+		80D04F062331229200726806 /* JSONWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80D04EF02331229200726806 /* JSONWriter.cpp */; };
+		80D04F072331229200726806 /* JSONWorker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80D04EF12331229200726806 /* JSONWorker.cpp */; };
+		80D04F082331229200726806 /* JSONWorker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80D04EF12331229200726806 /* JSONWorker.cpp */; };
+		80D04F092331229200726806 /* JSONPreparse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80D04EF22331229200726806 /* JSONPreparse.cpp */; };
+		80D04F0A2331229200726806 /* JSONPreparse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80D04EF22331229200726806 /* JSONPreparse.cpp */; };
+		80D04F0B2331229200726806 /* internalJSONNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80D04EF32331229200726806 /* internalJSONNode.cpp */; };
+		80D04F0C2331229200726806 /* internalJSONNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80D04EF32331229200726806 /* internalJSONNode.cpp */; };
+		80D04F0D2331229200726806 /* JSONAllocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80D04EF42331229200726806 /* JSONAllocator.cpp */; };
+		80D04F0E2331229200726806 /* JSONAllocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80D04EF42331229200726806 /* JSONAllocator.cpp */; };
+		80D04F0F2331229200726806 /* libjson.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80D04EF52331229200726806 /* libjson.cpp */; };
+		80D04F102331229200726806 /* libjson.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80D04EF52331229200726806 /* libjson.cpp */; };
+		80D04F112331229200726806 /* JSONChildren.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80D04EF62331229200726806 /* JSONChildren.cpp */; };
+		80D04F122331229200726806 /* JSONChildren.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80D04EF62331229200726806 /* JSONChildren.cpp */; };
+		80D04F1523312BAD00726806 /* DocTypePublisherPlugin_Precomp.pch in Sources */ = {isa = PBXBuildFile; fileRef = 80D04F1423312B7600726806 /* DocTypePublisherPlugin_Precomp.pch */; };
+		80D04F1623312BB500726806 /* DocTypePublisherPlugin_Precomp.pch in Sources */ = {isa = PBXBuildFile; fileRef = 80D04F1423312B7600726806 /* DocTypePublisherPlugin_Precomp.pch */; };
+		"88007904-6e1e-3408-bb79-9d314a9041f4" /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "bb95f6ac-f935-3bae-b6a7-79805bbef8dc" /* CoreServices.framework */; };
+		"97dc98b2-f7ec-3030-b70b-a340ec564e56" /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "b0b6bbf6-52ca-3beb-b965-05011293fb36" /* CoreFoundation.framework */; };
+		"99eb44f9-406b-3c35-888a-4316727442b5" /* PublishToLottie.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "9b699d8b-e6c7-3dd3-81ac-f73267a80d17" /* PublishToLottie.cpp */; };
+		"aa885ef3-53de-3d9f-bd96-3b499e95fb24" /* LottieOutputWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "0653de73-f4ae-3bdb-896a-f36aed33e04e" /* LottieOutputWriter.cpp */; };
+		"ae1584bf-d98d-3a61-9643-2c66571b2ebb" /* LottieFeatureMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "4c6f22be-c945-3e3e-b460-3d9fffe5092b" /* LottieFeatureMatrix.cpp */; };
+		"ba90920a-2c90-3799-948e-82de3e719ac4" /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "94c4fee1-e782-31f0-82c3-0e5ebba25d37" /* Foundation.framework */; };
+		"cb983f4e-391a-35ba-94b7-0bf88c43efac" /* LottieDocType.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "5b75567a-91fe-334b-8f1c-16bc0799d6fc" /* LottieDocType.cpp */; };
+		"cc002495-67d1-38fb-9804-2a6da9564cce" /* LottieFeatureMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "4c6f22be-c945-3e3e-b460-3d9fffe5092b" /* LottieFeatureMatrix.cpp */; };
+		"d36279b4-42c2-3ea4-b93c-5c4502795ec5" /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "bd5c5b5a-7505-3837-8a8b-a7c8d52f5e8e" /* ApplicationServices.framework */; };
+		"d3a83e2b-d5ac-3b16-bb6c-2890ca02ca38" /* LottieMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "5727d348-ca34-37d2-ab81-82c55ad0ffd1" /* LottieMain.cpp */; };
+		"ecc9c806-8cd3-3c24-b2ea-5bf842f32d1f" /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "f884e1ec-38c9-31fe-8dc2-4eb40ef66362" /* AppKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		242B00021C7CE764009E97CB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2430796C1C7D297300F23E89 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BD8B0B01D6192E0004FFFC2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BD8B8DB1D61A331004FFFC2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		"0653de73-f4ae-3bdb-896a-f36aed33e04e" /* LottieOutputWriter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; path = LottieOutputWriter.cpp; sourceTree = "<group>"; };
+		"284e02e8-c7f4-307d-a6a4-be1a33128836" /* LottieUtils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; path = LottieUtils.cpp; sourceTree = "<group>"; };
+		"4c6f22be-c945-3e3e-b460-3d9fffe5092b" /* LottieFeatureMatrix.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; path = LottieFeatureMatrix.cpp; sourceTree = "<group>"; };
+		"5727d348-ca34-37d2-ab81-82c55ad0ffd1" /* LottieMain.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; path = LottieMain.cpp; sourceTree = "<group>"; };
+		"5b75567a-91fe-334b-8f1c-16bc0799d6fc" /* LottieDocType.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; path = LottieDocType.cpp; sourceTree = "<group>"; };
+		80D04EE92331229200726806 /* JSONIterators.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = JSONIterators.cpp; path = ../../../Common/ThirdParty/libjson_7.6.1/libjson/_internal/Source/JSONIterators.cpp; sourceTree = "<group>"; };
+		80D04EEA2331229200726806 /* JSONStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = JSONStream.cpp; path = ../../../Common/ThirdParty/libjson_7.6.1/libjson/_internal/Source/JSONStream.cpp; sourceTree = "<group>"; };
+		80D04EEB2331229200726806 /* JSONNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = JSONNode.cpp; path = ../../../Common/ThirdParty/libjson_7.6.1/libjson/_internal/Source/JSONNode.cpp; sourceTree = "<group>"; };
+		80D04EEC2331229200726806 /* JSONNode_Mutex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = JSONNode_Mutex.cpp; path = ../../../Common/ThirdParty/libjson_7.6.1/libjson/_internal/Source/JSONNode_Mutex.cpp; sourceTree = "<group>"; };
+		80D04EED2331229200726806 /* JSONValidator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = JSONValidator.cpp; path = ../../../Common/ThirdParty/libjson_7.6.1/libjson/_internal/Source/JSONValidator.cpp; sourceTree = "<group>"; };
+		80D04EEE2331229200726806 /* JSONDebug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = JSONDebug.cpp; path = ../../../Common/ThirdParty/libjson_7.6.1/libjson/_internal/Source/JSONDebug.cpp; sourceTree = "<group>"; };
+		80D04EEF2331229200726806 /* JSONMemory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = JSONMemory.cpp; path = ../../../Common/ThirdParty/libjson_7.6.1/libjson/_internal/Source/JSONMemory.cpp; sourceTree = "<group>"; };
+		80D04EF02331229200726806 /* JSONWriter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = JSONWriter.cpp; path = ../../../Common/ThirdParty/libjson_7.6.1/libjson/_internal/Source/JSONWriter.cpp; sourceTree = "<group>"; };
+		80D04EF12331229200726806 /* JSONWorker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = JSONWorker.cpp; path = ../../../Common/ThirdParty/libjson_7.6.1/libjson/_internal/Source/JSONWorker.cpp; sourceTree = "<group>"; };
+		80D04EF22331229200726806 /* JSONPreparse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = JSONPreparse.cpp; path = ../../../Common/ThirdParty/libjson_7.6.1/libjson/_internal/Source/JSONPreparse.cpp; sourceTree = "<group>"; };
+		80D04EF32331229200726806 /* internalJSONNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = internalJSONNode.cpp; path = ../../../Common/ThirdParty/libjson_7.6.1/libjson/_internal/Source/internalJSONNode.cpp; sourceTree = "<group>"; };
+		80D04EF42331229200726806 /* JSONAllocator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = JSONAllocator.cpp; path = ../../../Common/ThirdParty/libjson_7.6.1/libjson/_internal/Source/JSONAllocator.cpp; sourceTree = "<group>"; };
+		80D04EF52331229200726806 /* libjson.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = libjson.cpp; path = ../../../Common/ThirdParty/libjson_7.6.1/libjson/_internal/Source/libjson.cpp; sourceTree = "<group>"; };
+		80D04EF62331229200726806 /* JSONChildren.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = JSONChildren.cpp; path = ../../../Common/ThirdParty/libjson_7.6.1/libjson/_internal/Source/JSONChildren.cpp; sourceTree = "<group>"; };
+		80D04F1423312B7600726806 /* DocTypePublisherPlugin_Precomp.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocTypePublisherPlugin_Precomp.pch; sourceTree = "<group>"; };
+		"94c4fee1-e782-31f0-82c3-0e5ebba25d37" /* Foundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Foundation.framework; sourceTree = "<group>"; };
+		"9b699d8b-e6c7-3dd3-81ac-f73267a80d17" /* PublishToLottie.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; path = PublishToLottie.cpp; sourceTree = "<group>"; };
+		F540544A0950B01B00D1FC3F /* LottiePlugin.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LottiePlugin.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5977F0C09B7D3B80058A43E /* project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; path = project.xcconfig; sourceTree = "<group>"; };
+		F5977F0F09B7D4150058A43E /* project_debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; path = project_debug.xcconfig; sourceTree = "<group>"; };
+		F5977F1109B7D41E0058A43E /* project_release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; path = project_release.xcconfig; sourceTree = "<group>"; };
+		F5D357480948EC91008C36CA /* LottiePlugin.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LottiePlugin.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		"b0b6bbf6-52ca-3beb-b965-05011293fb36" /* CoreFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreFoundation.framework; sourceTree = "<group>"; };
+		"bb95f6ac-f935-3bae-b6a7-79805bbef8dc" /* CoreServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreServices.framework; sourceTree = "<group>"; };
+		"bd5c5b5a-7505-3837-8a8b-a7c8d52f5e8e" /* ApplicationServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ApplicationServices.framework; sourceTree = "<group>"; };
+		"bec068b4-e95c-38a6-bd15-9857f2d78063" /* LottiePublisher.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; path = LottiePublisher.cpp; sourceTree = "<group>"; };
+		"ccad2961-602b-32e1-8654-61c3c8c92567" /* libxerces-c-3.2.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = "libxerces-c-3.2.dylib"; sourceTree = "<group>"; };
+		"f884e1ec-38c9-31fe-8dc2-4eb40ef66362" /* AppKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppKit.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F54054420950B01B00D1FC3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				"21e958d6-982c-3cd3-9800-795feedb43e3" /* CoreFoundation.framework in Frameworks */,
+				"1db80df0-2680-35f1-83e6-3346e4a53fce" /* Foundation.framework in Frameworks */,
+				"88007904-6e1e-3408-bb79-9d314a9041f4" /* CoreServices.framework in Frameworks */,
+				"d36279b4-42c2-3ea4-b93c-5c4502795ec5" /* ApplicationServices.framework in Frameworks */,
+				"0d500fae-0ee8-3a08-b8ee-db7d4fd0fc7f" /* AppKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5D357460948EC91008C36CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				"97dc98b2-f7ec-3030-b70b-a340ec564e56" /* CoreFoundation.framework in Frameworks */,
+				"ba90920a-2c90-3799-948e-82de3e719ac4" /* Foundation.framework in Frameworks */,
+				"5ac899dc-13eb-346a-890c-1072f7aa82fd" /* CoreServices.framework in Frameworks */,
+				"0daed7f8-47e8-34b1-82e9-ed2ad9bc3dd7" /* ApplicationServices.framework in Frameworks */,
+				"ecc9c806-8cd3-3c24-b2ea-5bf842f32d1f" /* AppKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24504BE51C84CA2100A4B826 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Projects;
+			sourceTree = "<group>";
+		};
+		2754BAA71C6D12EB00CF0BAD /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		"74ed9b82-fa0c-30ea-a213-c28ef1f468c7" /* ext/third_party/Xerces/lib/Mac/Release */ = {
+			isa = PBXGroup;
+			children = (
+				"ccad2961-602b-32e1-8654-61c3c8c92567" /* libxerces-c-3.2.dylib */,
+			);
+			name = ext/third_party/Xerces/lib/Mac/Release;
+			path = ../../../../../../ext/third_party/Xerces/lib/Mac/Release;
+			sourceTree = SOURCE_ROOT;
+		};
+		80D04EE2233121B700726806 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				80D04EE62331221000726806 /* ThirdParty */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		80D04EE62331221000726806 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				80D04EE82331222C00726806 /* libjson */,
+			);
+			name = ThirdParty;
+			sourceTree = "<group>";
+		};
+		80D04EE82331222C00726806 /* libjson */ = {
+			isa = PBXGroup;
+			children = (
+				80D04EF32331229200726806 /* internalJSONNode.cpp */,
+				80D04EF42331229200726806 /* JSONAllocator.cpp */,
+				80D04EF62331229200726806 /* JSONChildren.cpp */,
+				80D04EEE2331229200726806 /* JSONDebug.cpp */,
+				80D04EE92331229200726806 /* JSONIterators.cpp */,
+				80D04EEF2331229200726806 /* JSONMemory.cpp */,
+				80D04EEC2331229200726806 /* JSONNode_Mutex.cpp */,
+				80D04EEB2331229200726806 /* JSONNode.cpp */,
+				80D04EF22331229200726806 /* JSONPreparse.cpp */,
+				80D04EEA2331229200726806 /* JSONStream.cpp */,
+				80D04EED2331229200726806 /* JSONValidator.cpp */,
+				80D04EF12331229200726806 /* JSONWorker.cpp */,
+				80D04EF02331229200726806 /* JSONWriter.cpp */,
+				80D04EF52331229200726806 /* libjson.cpp */,
+			);
+			name = libjson;
+			sourceTree = "<group>";
+		};
+		80D04F1323312B4A00726806 /* mac */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = mac;
+			sourceTree = "<group>";
+		};
+		811C721C097349F9007B1073 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				"74ed9b82-fa0c-30ea-a213-c28ef1f468c7" /* ext/third_party/Xerces/lib/Mac/Release */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		"8f163121-433b-32ae-ae63-1db067f3792f" /* src */ = {
+			isa = PBXGroup;
+			children = (
+				"5b75567a-91fe-334b-8f1c-16bc0799d6fc" /* LottieDocType.cpp */,
+				"4c6f22be-c945-3e3e-b460-3d9fffe5092b" /* LottieFeatureMatrix.cpp */,
+				"5727d348-ca34-37d2-ab81-82c55ad0ffd1" /* LottieMain.cpp */,
+				"0653de73-f4ae-3bdb-896a-f36aed33e04e" /* LottieOutputWriter.cpp */,
+				"bec068b4-e95c-38a6-bd15-9857f2d78063" /* LottiePublisher.cpp */,
+				"284e02e8-c7f4-307d-a6a4-be1a33128836" /* LottieUtils.cpp */,
+				"9b699d8b-e6c7-3dd3-81ac-f73267a80d17" /* PublishToLottie.cpp */,
+			);
+			name = src;
+			path = ../../src;
+			sourceTree = SOURCE_ROOT;
+		};
+		F5977F0909B7D3970058A43E /* LottieExporterPlugin2.xcconfigs */ = {
+			isa = PBXGroup;
+			children = (
+				F5977F0C09B7D3B80058A43E /* project.xcconfig */,
+				F5977F0F09B7D4150058A43E /* project_debug.xcconfig */,
+				F5977F1109B7D41E0058A43E /* project_release.xcconfig */,
+			);
+			path = LottieExporterPlugin2.xcconfigs;
+			sourceTree = "<group>";
+		};
+		F5D357220948E8C4008C36CA = {
+			isa = PBXGroup;
+			children = (
+				F5977F0909B7D3970058A43E /* LottieExporterPlugin2.xcconfigs */,
+				F5D3576909491A7D008C36CA /* Frameworks */,
+				24504BE51C84CA2100A4B826 /* Projects */,
+				811C721C097349F9007B1073 /* Libraries */,
+				F5D3574D0948ECCD008C36CA /* Sources */,
+				F5D357400948EBCB008C36CA /* Products */,
+				2754BAA71C6D12EB00CF0BAD /* Tests */,
+			);
+			sourceTree = "<group>";
+		};
+		F5D357400948EBCB008C36CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F540544A0950B01B00D1FC3F /* LottiePlugin.plugin */,
+				F5D357480948EC91008C36CA /* LottiePlugin.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5D3574D0948ECCD008C36CA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				80D04F1323312B4A00726806 /* mac */,
+				80D04F1423312B7600726806 /* DocTypePublisherPlugin_Precomp.pch */,
+				80D04EE2233121B700726806 /* Common */,
+				"8f163121-433b-32ae-ae63-1db067f3792f" /* src */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		F5D3576909491A7D008C36CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				"cb9131d2-5803-379a-824c-e9f624c99023" /* Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		"cb9131d2-5803-379a-824c-e9f624c99023" /* Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				"b0b6bbf6-52ca-3beb-b965-05011293fb36" /* CoreFoundation.framework */,
+				"94c4fee1-e782-31f0-82c3-0e5ebba25d37" /* Foundation.framework */,
+				"bb95f6ac-f935-3bae-b6a7-79805bbef8dc" /* CoreServices.framework */,
+				"bd5c5b5a-7505-3837-8a8b-a7c8d52f5e8e" /* ApplicationServices.framework */,
+				"f884e1ec-38c9-31fe-8dc2-4eb40ef66362" /* AppKit.framework */,
+			);
+			name = Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks;
+			path = ../../../../../../../../../../../../Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"5a82cdaf-d2bf-3f2e-b75f-ebc5bfd424ec" /* LottieExporterPlugin2.Release */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5D3574A0948EC91008C36CA /* Build configuration list for PBXNativeTarget "LottieExporterPlugin2.Release" */;
+			buildPhases = (
+				F5D357440948EC91008C36CA /* Resources */,
+				F5D357450948EC91008C36CA /* Sources */,
+				F5D357460948EC91008C36CA /* Frameworks */,
+				F5D357CC094A3D14008C36CA /* Rez */,
+				2430796C1C7D297300F23E89 /* Embed Frameworks */,
+				5BD8B0B01D6192E0004FFFC2 /* CopyFiles */,
+				CECC06A75DA044EA904B33B6 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LottieExporterPlugin2.Release;
+			productName = Release;
+			productReference = F5D357480948EC91008C36CA /* LottiePlugin.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+		"f9ba50f8-81e3-397c-88b2-4dbde5ea201e" /* LottieExporterPlugin2.Debug */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F54054480950B01B00D1FC3F /* Build configuration list for PBXNativeTarget "LottieExporterPlugin2.Debug" */;
+			buildPhases = (
+				F540543D0950B01B00D1FC3F /* Resources */,
+				F540543E0950B01B00D1FC3F /* Sources */,
+				F54054420950B01B00D1FC3F /* Frameworks */,
+				F54054440950B01B00D1FC3F /* Rez */,
+				242B00021C7CE764009E97CB /* Embed Frameworks */,
+				5BD8B8DB1D61A331004FFFC2 /* CopyFiles */,
+				CFF13CD89CC74746A4C4E757 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LottieExporterPlugin2.Debug;
+			productName = Debug;
+			productReference = F540544A0950B01B00D1FC3F /* LottiePlugin.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5D357240948E8C4008C36CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					"5a82cdaf-d2bf-3f2e-b75f-ebc5bfd424ec" = {
+						ProvisioningStyle = Manual;
+					};
+					"f9ba50f8-81e3-397c-88b2-4dbde5ea201e" = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = F5D357250948E8C4008C36CA /* Build configuration list for PBXProject "LottieExporterPlugin2.mp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F5D357220948E8C4008C36CA;
+			productRefGroup = F5D357400948EBCB008C36CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"f9ba50f8-81e3-397c-88b2-4dbde5ea201e" /* LottieExporterPlugin2.Debug */,
+				"5a82cdaf-d2bf-3f2e-b75f-ebc5bfd424ec" /* LottieExporterPlugin2.Release */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F540543D0950B01B00D1FC3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5D357440948EC91008C36CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		F54054440950B01B00D1FC3F /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5D357CC094A3D14008C36CA /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CECC06A75DA044EA904B33B6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "python post_build.64.py -c ${TARGET_NAME}\n";
+			showEnvVarsInLog = 0;
+		};
+		CFF13CD89CC74746A4C4E757 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "python post_build.64.py -c ${TARGET_NAME}\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F540543E0950B01B00D1FC3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				"cb983f4e-391a-35ba-94b7-0bf88c43efac" /* LottieDocType.cpp in Sources */,
+				80D04F112331229200726806 /* JSONChildren.cpp in Sources */,
+				80D04EF72331229200726806 /* JSONIterators.cpp in Sources */,
+				80D04F032331229200726806 /* JSONMemory.cpp in Sources */,
+				"cc002495-67d1-38fb-9804-2a6da9564cce" /* LottieFeatureMatrix.cpp in Sources */,
+				80D04EFF2331229200726806 /* JSONValidator.cpp in Sources */,
+				80D04F0B2331229200726806 /* internalJSONNode.cpp in Sources */,
+				"1e197cbf-2810-33f3-94d6-cc9fec10ad38" /* LottieMain.cpp in Sources */,
+				80D04F052331229200726806 /* JSONWriter.cpp in Sources */,
+				80D04EFB2331229200726806 /* JSONNode.cpp in Sources */,
+				"aa885ef3-53de-3d9f-bd96-3b499e95fb24" /* LottieOutputWriter.cpp in Sources */,
+				80D04F092331229200726806 /* JSONPreparse.cpp in Sources */,
+				80D04F012331229200726806 /* JSONDebug.cpp in Sources */,
+				80D04F072331229200726806 /* JSONWorker.cpp in Sources */,
+				80D04F0D2331229200726806 /* JSONAllocator.cpp in Sources */,
+				80D04EF92331229200726806 /* JSONStream.cpp in Sources */,
+				"658cbf32-33e3-3231-be5b-68c409b7f767" /* LottiePublisher.cpp in Sources */,
+				80D04F0F2331229200726806 /* libjson.cpp in Sources */,
+				"2be9c7bc-62d9-3ede-8614-274a81973337" /* LottieUtils.cpp in Sources */,
+				"15e3c10b-48cc-30f6-9154-03dc03faf3d9" /* PublishToLottie.cpp in Sources */,
+				80D04EFD2331229200726806 /* JSONNode_Mutex.cpp in Sources */,
+				80D04F1523312BAD00726806 /* DocTypePublisherPlugin_Precomp.pch in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5D357450948EC91008C36CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				"628738f7-f919-3b69-b0bf-d84080424d6d" /* LottieDocType.cpp in Sources */,
+				80D04F122331229200726806 /* JSONChildren.cpp in Sources */,
+				80D04EF82331229200726806 /* JSONIterators.cpp in Sources */,
+				80D04F042331229200726806 /* JSONMemory.cpp in Sources */,
+				"ae1584bf-d98d-3a61-9643-2c66571b2ebb" /* LottieFeatureMatrix.cpp in Sources */,
+				80D04F002331229200726806 /* JSONValidator.cpp in Sources */,
+				80D04F0C2331229200726806 /* internalJSONNode.cpp in Sources */,
+				"d3a83e2b-d5ac-3b16-bb6c-2890ca02ca38" /* LottieMain.cpp in Sources */,
+				80D04F062331229200726806 /* JSONWriter.cpp in Sources */,
+				80D04EFC2331229200726806 /* JSONNode.cpp in Sources */,
+				"4d44901b-3548-3bd4-b418-1fe9304e1fc4" /* LottieOutputWriter.cpp in Sources */,
+				80D04F0A2331229200726806 /* JSONPreparse.cpp in Sources */,
+				80D04F022331229200726806 /* JSONDebug.cpp in Sources */,
+				80D04F082331229200726806 /* JSONWorker.cpp in Sources */,
+				80D04F0E2331229200726806 /* JSONAllocator.cpp in Sources */,
+				80D04EFA2331229200726806 /* JSONStream.cpp in Sources */,
+				"4187ba0a-8093-3dd1-ab2e-00712ffa5f8e" /* LottiePublisher.cpp in Sources */,
+				80D04F102331229200726806 /* libjson.cpp in Sources */,
+				"6ac9d8d6-8a91-3f7f-b80d-4dcb48f5020b" /* LottieUtils.cpp in Sources */,
+				"99eb44f9-406b-3c35-888a-4316727442b5" /* PublishToLottie.cpp in Sources */,
+				80D04EFE2331229200726806 /* JSONNode_Mutex.cpp in Sources */,
+				80D04F1623312BB500726806 /* DocTypePublisherPlugin_Precomp.pch in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F54054490950B01B00D1FC3F /* Default */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5977F0F09B7D4150058A43E /* project_debug.xcconfig */;
+			buildSettings = {
+				GCC_PREFIX_HEADER = DocTypePublisherPlugin_Precomp.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					MAC_ENV,
+					_MAC,
+					"DEBUG=1",
+					_DEBUG,
+				);
+				LIBRARY_SEARCH_PATHS = "";
+			};
+			name = Default;
+		};
+		F5D357270948E8C4008C36CA /* Default */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5977F0C09B7D3B80058A43E /* project.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../../../../CustomPlatformSupportDevelopmentKit\"/**",
+					"\"$(SRCROOT)/../../../Common/ThirdParty/libjson_7.6.1/libjson\"",
+					../../include,
+				);
+			};
+			name = Default;
+		};
+		F5D3574B0948EC91008C36CA /* Default */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5977F1109B7D41E0058A43E /* project_release.xcconfig */;
+			buildSettings = {
+				GCC_PREFIX_HEADER = DocTypePublisherPlugin_Precomp.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					MAC_ENV,
+					_MAC,
+					NDEBUG,
+					"FEATURE_MAC_BUNDLED_JRE=1",
+				);
+				LIBRARY_SEARCH_PATHS = "";
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F54054480950B01B00D1FC3F /* Build configuration list for PBXNativeTarget "LottieExporterPlugin2.Debug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F54054490950B01B00D1FC3F /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		F5D357250948E8C4008C36CA /* Build configuration list for PBXProject "LottieExporterPlugin2.mp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5D357270948E8C4008C36CA /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		F5D3574A0948EC91008C36CA /* Build configuration list for PBXNativeTarget "LottieExporterPlugin2.Release" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5D3574B0948EC91008C36CA /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5D357240948E8C4008C36CA /* Project object */;
+}

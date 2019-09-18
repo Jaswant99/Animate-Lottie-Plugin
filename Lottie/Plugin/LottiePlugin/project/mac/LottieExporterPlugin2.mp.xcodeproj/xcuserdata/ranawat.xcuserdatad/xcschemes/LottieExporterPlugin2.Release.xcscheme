@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0930"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "NO"
+      buildImplicitDependencies = "NO">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5a82cdaf-d2bf-3f2e-b75f-ebc5bfd424ec"
+               BuildableName = "SampleCreateJSPlugin.plugin"
+               BlueprintName = "LottieExporterPlugin2.Release"
+               ReferencedContainer = "container:LottieExporterPlugin2.mp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Default"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+      </Testables>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Default"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "NO"
+      debugServiceExtension = "internal"
+      enableGPUFrameCaptureMode = "3"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "5a82cdaf-d2bf-3f2e-b75f-ebc5bfd424ec"
+            BuildableName = "SampleCreateJSPlugin.plugin"
+            BlueprintName = "LottieExporterPlugin2.Release"
+            ReferencedContainer = "container:LottieExporterPlugin2.mp.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Default"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "NO">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "5a82cdaf-d2bf-3f2e-b75f-ebc5bfd424ec"
+            BuildableName = "SampleCreateJSPlugin.plugin"
+            BlueprintName = "LottieExporterPlugin2.Release"
+            ReferencedContainer = "container:LottieExporterPlugin2.mp.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Default">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Default"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>
