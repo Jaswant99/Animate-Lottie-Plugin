@@ -1435,7 +1435,7 @@ namespace LottieExporter
 	FCM::Result JSONOutputWriter::AddMarkers(JSONNode &firstNode)
 	{
        // std::cout<<"ENTERED markers"<<std::endl;
-		JSONNode c;
+		JSONNode c = JSONNode(JSON_ARRAY);
 		c.set_name("markers");
 		firstNode.push_back(c);
 		return FCM_SUCCESS;
